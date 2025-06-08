@@ -31,7 +31,10 @@ async def json_status(address: str):
             "port": port,
             "players_online": status.players.online,
             "players_max": status.players.max,
-            "version": status.version.name,
+            "version_name": str(status.version.name or "Unknown"),
+            "version_protocol": status.version.protocol,
+            "motd": status.description.get("text") if isinstance(status.description, dict) else str(status.description),
+            "online": True,
             "latency": status.latency
         }
     except Exception as e:
@@ -59,13 +62,12 @@ async def img_status(address: str, number: int = None, server_name: str = Query(
     if not data:
         server = JavaServer.lookup(f"{ip}:{port}")
         status = server.status()
-        version_full = str(status.version.name or "Unknown")
         data = {
             "host": ip,
             "port": port,
             "players_online": status.players.online,
             "players_max": status.players.max,
-            "version_name": version_full,
+            "version_name": str(status.version.name or "Unknown"),
             "version_protocol": status.version.protocol,
             "motd": status.description.get("text") if isinstance(status.description, dict) else str(status.description),
             "online": True
