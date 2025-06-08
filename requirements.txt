@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+mcstatus
+Pillow
+dnspython
+cachetools
+psutil
+PyYAML

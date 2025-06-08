@@ -1,0 +1,13 @@
+rate_limit:
+  max_requests_per_minute: 60
+
+cache:
+  ttl_seconds: 600
+  max_memory_mb: 128
+  min_memory_margin_mb: 6
+  max_disk_cache_mb: 512
+  min_disk_free_mb: 6
+
+paths:
+  img_dir: imgs
+  img_cache_dir: img_cache
