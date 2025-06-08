@@ -23,21 +23,29 @@
   
   返回示例：
   
+  ```json
     {
-  
+    
       "host": "127.0.0.1",
-  
+    
       "port": 25565,
-  
+    
       "players_online": 0,
-  
+    
       "players_max": 2025,
+    
+      "version_name": "BungeeCord 1.8.x-1.21.x",
+     
+      "version_protocol": 47,
   
-      "version": "BungeeCord 1.8.x-1.21.x",
-  
-      "latency": 72.6237000053516
-  
+      "motd": "This is MOTD",
+    
+      "online": true,
+    
+      "latency": 87.7833999984432
+      
     }
+  ```
   
 - 图片接口：
   
