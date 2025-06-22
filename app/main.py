@@ -10,6 +10,9 @@ import os
 
 app = FastAPI()
 
+if not os.path.exists(IMG_CACHE_DIR):
+    os.makedirs(IMG_CACHE_DIR, exist_ok=True)
+
 background_cache_cleaner(interval_seconds=300)
 
 @app.get("/json/{address}")
