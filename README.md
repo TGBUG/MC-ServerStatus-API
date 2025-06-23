@@ -62,24 +62,24 @@ conf.yaml
 ```yaml
   rate_limit:
   
-    max_requests_per_minute: 60  =>  每分钟最大请求量
+    max_requests_per_minute: 60  # 每分钟最大请求量
     
 
   cache:
   
-    ttl_seconds: 600  =>  缓存存活时间
+    ttl_seconds: 600  # 缓存存活时间
     
-    max_memory_mb: 128  =>  最大内存占用
+    max_memory_mb: 128  # 最大内存占用
     
-    min_memory_margin_mb: 6  =>  当剩余值小于多少时触发清理
+    min_memory_margin_mb: 6  # 当剩余值小于多少时触发清理
     
-    max_disk_cache_mb: 512  =>  最大磁盘占用
+    max_disk_cache_mb: 512  # 最大磁盘占用
     
-    min_disk_free_mb: 6  =>  当剩余值小于多少时触发清理
+    min_disk_free_mb: 6  # 当剩余值小于多少时触发清理
 
   paths:
   
-    img_dir: imgs  =>  背景图目录，不建议修改
+    img_dir: imgs  # 背景图目录，不建议修改
     
-    img_cache_dir: img_cache  =>  img接口缓存目录，不建议修改
+    img_cache_dir: img_cache  # img接口缓存目录，不建议修改
 ```
