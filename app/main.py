@@ -5,7 +5,7 @@ from utils.cache import get_cached_json, cache_json, get_cached_img_path, cache_
 from utils.image import render_image
 from utils.dns import resolve_srv
 from security.ratelimit import global_limiter
-from config import CACHE_TTL_SECONDS
+from config import CACHE_TTL_SECONDS, IMG_CACHE_DIR
 import os
 
 app = FastAPI()
