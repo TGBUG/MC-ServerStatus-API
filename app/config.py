@@ -1,7 +1,7 @@
 import yaml
 import os
 
-CONFIG_PATH = os.getenv("CONFIG_PATH", "conf.yaml")
+CONFIG_PATH = os.getenv("CONFIG_PATH")
 
 if not os.path.exists(CONFIG_PATH):
     raise FileNotFoundError(f"配置文件未找到: {CONFIG_PATH}")
