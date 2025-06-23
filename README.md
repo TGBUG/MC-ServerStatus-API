@@ -1,6 +1,8 @@
 # MC-ServerStaus-API
 基于python fastapi开发的我的世界服务器监控API
 
+Demo: https://api.tgbug.cn/mc/请求路径
+
 ### 使用方法
 - 直接使用 python
   下载源码
